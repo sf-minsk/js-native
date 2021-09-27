@@ -1,5 +1,3 @@
-import React from 'react';
-import './App.css';
 
 
 // let count = 0;
@@ -96,34 +94,34 @@ import './App.css';
 //
 // console.log(nbYear(1500000, 0.25, 1000, 2000000))
 //
-const tree = {
-    value: 5,
-    left: {
-        value: 10,
-        left: {
-            value: 4,
-        },
-        right: {
-            value: 7,
-        },
-    },
-    right: {
-        value: 11,
-        left: {
-            value: 3,
-        },
-        right: {
-            value: 2,
-        },
-    },
-};
-
-const findMax = (obj: any) => {
-    let max: number[] = []
-    Object.values(obj).map(el => typeof el === 'number' ? max.push(el) : max.push(findMax(el)))
-    return Math.max.apply(null, max)
-}
-console.log(findMax(tree))
+// const tree = {
+//     value: 5,
+//     left: {
+//         value: 10,
+//         left: {
+//             value: 4,
+//         },
+//         right: {
+//             value: 7,
+//         },
+//     },
+//     right: {
+//         value: 11,
+//         left: {
+//             value: 3,
+//         },
+//         right: {
+//             value: 2,
+//         },
+//     },
+// };
+//
+// const findMax = (obj: any) => {
+//     let max: number[] = []
+//     Object.values(obj).map(el => typeof el === 'number' ? max.push(el) : max.push(findMax(el)))
+//     return Math.max.apply(null, max)
+// }
+// console.log(findMax(tree))
 
 
 // for (let i=0; i < 10; i++) {
@@ -131,6 +129,135 @@ console.log(findMax(tree))
 //         console.log(i);
 //     }, 1000);
 // }
+
+
+// function arrayDiff(a, b) {
+//     let arr = a
+//     for (let i = 0; i < b.length; i++) {
+//         arr = arr.filter((el: any) => el !== b[i])
+//     }
+//     return arr
+// }
+//
+//
+// console.log(arrayDiff([1, 2, 3], [1, 2, 3]))
+//
+// for (var i = 0; i < 3; i++) {
+//     setTimeout(() => {
+//         console.log(i)
+//     }, i * 1000)
+// }
+
+//
+// (async () => {
+//     const method = async  () => 10;
+//     console.log(1);
+//     () => {
+//         console.log(2)
+//     };
+//     setTimeout(() => {
+//         console.log(3)
+//     });
+//     (_ => console.log(_, 4))();
+//     (()=> console.log(5))();
+//     () => console.log(6);
+//     (_ => console.log(_, 7))(8);
+//     console.log(await method())
+//     return 9
+// })().then(console.log)
+
+// function Main() {}
+// Main.prototype = {protection: true}
+// Main.prototype = {protection: false}
+// @ts-ignore
+//const obj = new Main()
+//Main.prototype = {protection: false}
+//Main.prototype.protection = false
+//console.log(obj.protection)
+
+// let a = 3
+//   const foo = async () => {
+//      console.log(a)
+//      a = 5
+//  }
+//  foo()
+// var myVar = "Andrey"
+// function myFunc() {
+//     let myVar = "Nick"
+//     var myVar = "John"
+//     console.log(myVar)
+// }
+// console.log(myVar)
+// myFunc()
+
+
+function f1() {
+    let a = 10
+    f2(a)
+}
+
+function f2(arg: any) {
+    console.log(arg)
+}
+
+f1()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 export function App() {

@@ -1,5 +1,4 @@
 import React from "react";
-import {dirname} from "path";
 
 // let count = 0;
 // // @ts-ignore
@@ -1299,25 +1298,66 @@ export function App() {
 // sum(1)(3)(4)(2)(1)(4)(5) //20
 // sum(5,4)(9,2) //20
 // sum(1,3)(4,2)(1,4,5) //20
-12
+// 12
+//
+// let arr = [72, 45, 98, 34, 56, 85, 33, 65, 43, 22, 53, 75, 11]
+//
+// let arrSort = (arr) => {
+//     let first = arr[0]
+//     let second = 0
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] < first) {
+//             second = first
+//             first = arr[i]
+//         }
+//     }
+//     return [first, second]
+// }
+//
+// console.log(arrSort(arr))
 
-let arr = [72, 45, 98, 34, 56, 85, 33, 65, 43, 22, 53, 75, 11]
 
-let arrSort = (arr) => {
-    let first = arr[0]
-    let second = 0
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] < first) {
-            second = first
-            first = arr[i]
-        }
+// let obj = {
+//     name: {value: 'Alex', enumerable: false},
+//     age: 22,
+//     sayHi() {
+//         alert('Hello')
+//     }
+// }
+// let obj2 = Object.create(null, {name: {value: 'Alex', enumerable: false}})
+//
+// console.log(Object.getOwnPropertyNames(obj2))
+// console.log(Object.keys(obj2))
+
+
+
+
+// class Obj {
+//     constructor(a) {
+//         this.name = a
+//         this.name2 = this.name
+//     }
+// }
+//
+// console.log(new Obj('Alex'))
+//
+// let pr1 = Promise.resolve(1)
+// console.log(pr1)
+
+// let arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
+// let newArr = arr.splice(4,0,0)
+// console.log(arr)
+// console.log(newArr)
+
+var a = 5
+function f() {
+    console.log(a)
+    if (a) {
+        console.log(a)
+        var a = 10
     }
-    return [first, second]
 }
-
-console.log(arrSort(arr))
-
-
+f()
 
 
 
